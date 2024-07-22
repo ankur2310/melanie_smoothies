@@ -36,10 +36,6 @@ if ingredients_list:
     values ('""" + ingredients_string + """', '"""+name_on_order+"""')"""
 
 
-import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response)
-
 #st.write(my_insert_stmt)
 #st.stop()
     time_to_insert = st.button('Submit Order')
@@ -49,3 +45,6 @@ st.text(fruityvice_response)
 	    
         st.success('Your Smoothie is ordered!', icon="✅")
  
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
