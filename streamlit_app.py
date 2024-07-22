@@ -50,5 +50,5 @@ if ingredients_list:
  
 
 
-st.text(fruityvice_response.json())
+#st.text(fruityvice_response.json())
 
